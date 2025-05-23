@@ -1,0 +1,17 @@
+(\d+\.\d+),(\d+\.\d+)
+
+
+
+\2,\1
+
+ymaps.ready(init);
+
+function init() {
+    var myMap = new ymaps.Map('map', {
+            center: [44.487125, 40.114808],
+            zoom: 11,
+			controls:[]
+        }, {
+			minZoom:10,
+            searchControlProvider: 'yandex#search'
+        });
